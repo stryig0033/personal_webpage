@@ -1,9 +1,7 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -25,7 +23,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpeg';
+import profilepic from '../images/profilepic.jpg';
 import {
   About,
   ContactSection,
@@ -72,7 +70,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         高田智生と申します。東京大学大学院工学系研究科の修士課程に在籍中。AIの環境問題への応用方法について研究開発をしています。
-        また、株式会社Ocean_Intelligenceの代表として製造業におけるAIプロダクト開発とDX化支援を行っております。
+        また、株式会社TAKO Solutionsの代表として海洋関連事業分野におけるAIプロダクト開発とDX化支援を行っております。
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         音楽、釣り、海鮮料理、お酒、ドライブ、言語学習が大好き。
@@ -102,7 +100,7 @@ export const aboutData: About = {
   description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部経済学科入学。
   在学中は学生団体にて渉外部長と会計責任者を経験。2022年夏よりデンマークのAarhus Universityへ交換留学。
   現地ではJapan Bowl 2023の立ち上げメンバーとして活動。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学。
-  また、2024年2月には株式会社Ocean_Intelligenceを設立。`,
+  また、2024年2月には株式会社TAKO Solutionsを設立。`,
   aboutItems: [
     {label: 'Location', text: '東京 / 神戸', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -304,10 +302,10 @@ export const experience: TimelineItem[] = [
   },
   {
     date: '2024年2月~現在',
-    location: '株式会社Ocean_Intelligence',
+    location: '株式会社TAKO Solutions',
     title: '代表(起業)',
     content: (
-      <p>主に製造業におけるAIシステム開発とDX支援</p>
+      <p>主に海洋関連事業分野におけるAIシステム開発とDX支援</p>
     ),
   },
 ];
