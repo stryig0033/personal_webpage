@@ -6,23 +6,23 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import GithubIcon from '../components/Icon/GithubIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
+//import LinkedInIcon from '../components/Icon/LinkedInIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+//import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+//import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+//import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+//import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+//import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+//import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+//import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+//import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -40,8 +40,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Tomoki Takata personal page',
+  description: "personal site of Tomoki Takata, created with React Resume sample",
 };
 
 /**
@@ -69,8 +69,9 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        高田智生と申します。東京大学大学院工学系研究科の修士課程に在籍中。AIの環境問題への応用方法について研究開発をしています。
-        また、株式会社TAKO Solutionsの代表として海洋関連事業分野におけるAIプロダクト開発とDX化支援を行っております。
+        高田智生と申します。東京大学大学院工学系研究科の修士課程に在籍中。
+        AIの環境問題への応用方法について研究開発をしています。
+        また、フリーランスでAI/webエンジニアやデータアナリストをしています。
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         音楽、釣り、海鮮料理、お酒、ドライブ、言語学習が大好き。
@@ -99,8 +100,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部経済学科入学。
   在学中は学生団体にて渉外部長と会計責任者を経験。2022年夏よりデンマークのAarhus Universityへ交換留学。
-  現地ではJapan Bowl 2023の立ち上げメンバーとして活動。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学。
-  また、2024年2月には株式会社TAKO Solutionsを設立。`,
+  現地ではJapan Bowl 2023の立ち上げメンバーとして活動。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学。`,
   aboutItems: [
     {label: 'Location', text: '東京 / 神戸', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -136,36 +136,40 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Coding Languages',
     skills: [
       {
-        name: 'Typescript',
+        name: 'Python',
         level: 8,
       },
       {
-        name: 'Next.js',
+        name: 'R',
         level: 7,
       },
       {
-        name: 'React',
+        name: 'Typescript',
+        level: 4,
+      },
+      {
+        name: 'next.js',
         level: 4,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Academic Knowledge',
     skills: [
       {
-        name: 'Python',
-        level: 10,
-      },
-      {
-        name: 'R',
+        name: 'Mathematical Statistics',
         level: 8,
       },
       {
-        name: 'JavaScript',
-        level: 4,
+        name: 'Econometrics',
+        level: 8,
+      },
+      {
+        name: 'Machine Learning',
+        level: 6,
       },
     ],
   },
@@ -176,71 +180,23 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'OpenAI-APIを用いたLINEbot',
+    description: '自動的に最新論文を要約したテキストを送信するLINEbotを作りました。',
+    url: 'https://blog.stryig.com/2024/01/line_arxive_bot/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'MLflowによる機械学習モデルの学習フロー全自動化',
+    description: 'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作りました。',
+    url: 'https://blog.stryig.com/2024/01/mlflow_automation/',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
+    title: 'webスクレイピングツール',
+    description: '自然言語による指示をもとに任意のwebサイトをスクレイピングするためのツールを作成しました。',
     url: 'https://reactresume.com',
     image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+  }
 ];
 
 /**
@@ -300,15 +256,7 @@ export const experience: TimelineItem[] = [
       <p>フロントエンド開発</p>
     ),
   },
-  {
-    date: '2024年2月~現在',
-    location: '株式会社TAKO Solutions',
-    title: '代表(起業)',
-    content: (
-      <p>主に海洋関連事業分野におけるAIシステム開発とDX支援</p>
-    ),
-  },
-];
+]
 
 /**
  * Contact section
@@ -325,18 +273,18 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Twitter,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@ofjaojfoaj',
+      href: 'https://www.twitter.com/ofjaojfoaj/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'stryig0033',
+      href: 'https://github.com/stryig0033',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'Tomoki Takata',
+      href: 'https://www.linkedin.com/in/03tomokitakata/',
     },
   ],
 };
@@ -345,9 +293,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+
 ];
