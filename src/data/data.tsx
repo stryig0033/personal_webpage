@@ -80,7 +80,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://stryig.com/resume.html',
       text: 'CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -99,8 +99,8 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部経済学科入学。
-  在学中は学生団体にて渉外部長と会計責任者を経験。2022年夏よりデンマークのAarhus Universityへ交換留学。
-  現地ではJapan Bowl 2023の立ち上げメンバーとして活動。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学。`,
+  大学では経済理論や数理解析手法を学んだ後、2022年夏よりデンマークのAarhus Universityへ交換留学し、本格的に情報工学の学習を開始。
+  帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学。現在はフリーランスエンジニアとして活動中。`,
   aboutItems: [
     {label: 'Location', text: '東京 / 神戸', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -181,20 +181,20 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'OpenAI-APIを用いたLINEbot',
-    description: '自動的に最新論文を要約したテキストを送信するLINEbotを作りました。',
+    description: '定期的に最新論文の要約情報を送信してくれるLINEbotとその運用環境を構築しました。',
     url: 'https://blog.stryig.com/2024/01/line_arxive_bot/',
     image: porfolioImage1,
   },
   {
     title: 'MLflowによる機械学習モデルの学習フロー全自動化',
-    description: 'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作りました。',
+    description: 'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作成しました。',
     url: 'https://blog.stryig.com/2024/01/mlflow_automation/',
     image: porfolioImage2,
   },
   {
-    title: 'webスクレイピングツール',
-    description: '自然言語による指示をもとに任意のwebサイトをスクレイピングするためのツールを作成しました。',
-    url: 'https://reactresume.com',
+    title: 'webサイト作成',
+    description: '株式会社〇〇様のwebサイトを制作させていただきました。',
+    url: '',
     image: porfolioImage3,
   }
 ];
