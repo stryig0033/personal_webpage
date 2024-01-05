@@ -14,7 +14,7 @@ import {
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+//import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 //import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 //import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 //import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
@@ -41,7 +41,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Tomoki Takata personal page',
-  description: "personal site of Tomoki Takata, created with React Resume sample",
+  description: "personal resume site of Tomoki Takata, created with React Resume sample",
 };
 
 /**
@@ -65,11 +65,11 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Tomoki Takata`,
+  name: `Welcome!`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        高田智生と申します。東京大学大学院工学系研究科の修士課程に在籍中。
+        高田 智生(たかた ともき)と申します。東京大学大学院工学系研究科の修士課程に在籍中。
         AIの環境問題への応用方法について研究開発をしています。
         また、フリーランスでAI/webエンジニアやデータアナリストをしています。
       </p>
@@ -100,7 +100,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部経済学科入学。
   大学では経済理論や数理解析手法を学んだ後、2022年夏よりデンマークのAarhus Universityへ交換留学し、本格的に情報工学の学習を開始。
-  帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学。現在はフリーランスエンジニアとして活動中。`,
+  帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学予定。現在はフリーランスエンジニアとして活動中。`,
   aboutItems: [
     {label: 'Location', text: '東京 / 神戸', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -190,12 +190,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作成しました。',
     url: 'https://blog.stryig.com/2024/01/mlflow_automation/',
     image: porfolioImage2,
-  },
-  {
-    title: 'webサイト作成',
-    description: '株式会社〇〇様のwebサイトを制作させていただきました。',
-    url: '',
-    image: porfolioImage3,
   }
 ];
 
