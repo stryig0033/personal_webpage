@@ -69,7 +69,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        高田 智生(たかた ともき)と申します。東京大学大学院工学系研究科の修士課程に在籍中。
+        髙田 智生(たかた ともき)と申します。東京大学大学院工学系研究科の修士課程に在籍中。
         AIの環境問題への応用方法について研究開発をしています。
         また、フリーランスでAI/webエンジニアやデータアナリストをしています。
       </p>
