@@ -182,13 +182,13 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'OpenAI-APIを用いたLINEbot',
     description: '定期的に最新論文の要約情報を送信してくれるLINEbotとその運用環境を構築しました。',
-    url: 'https://blog.stryig.com/2024/01/line_arxive_bot/',
+    url: 'https://github.com/stryig0033/LINE-bot-arxiv',
     image: porfolioImage1,
   },
   {
     title: 'MLflowによる機械学習モデルの学習フロー全自動化',
     description: 'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作成しました。',
-    url: 'https://blog.stryig.com/2024/01/mlflow_automation/',
+    url: 'https://github.com/stryig0033/PredFlow',
     image: porfolioImage2,
   }
 ];
