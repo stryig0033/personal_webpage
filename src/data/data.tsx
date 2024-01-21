@@ -14,7 +14,7 @@ import {
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-//import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 //import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 //import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 //import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
@@ -69,8 +69,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        髙田 智生(たかた ともき)と申します。東京大学大学院工学系研究科の修士課程に在籍中。
-        AIの環境問題への応用方法について研究開発をしています。
+        髙田 智生(たかた ともき)と申します。<br />
+        東京大学大学院工学系研究科の修士課程に在籍中。AIの環境問題への応用方法について研究開発をしています。
         また、フリーランスでAI/webエンジニアやデータアナリストをしています。
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -99,8 +99,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部経済学科入学。
-  大学では経済理論や数理解析手法を学んだ後、2022年夏よりデンマークのAarhus Universityへ交換留学し、本格的に情報工学の学習を開始。
-  帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学予定。現在はフリーランスエンジニアとして活動中。`,
+  計量経済学・数理統計学専攻として経済理論や数理解析手法について学び、2022年夏よりデンマークのAarhus Universityへ交換留学。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学予定。現在はフリーランスエンジニアとして活動中。`,
   aboutItems: [
     {label: 'Location', text: '東京 / 神戸', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -139,7 +138,7 @@ export const skills: SkillGroup[] = [
     name: 'Coding Languages',
     skills: [
       {
-        name: 'Python',
+        name: 'Python (pandas, pytorch, tensorflow, FastAPI, etc...)',
         level: 8,
       },
       {
@@ -147,11 +146,11 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'Typescript',
-        level: 4,
+        name: 'Typescript (next.js, react)',
+        level: 6,
       },
       {
-        name: 'next.js',
+        name: 'Stata',
         level: 4,
       },
     ],
@@ -169,7 +168,20 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Machine Learning',
-        level: 6,
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Cloud knowledge',
+    skills: [
+      {
+        name: 'Amazon Web Services',
+        level: 5,
+      },
+      {
+        name: 'Google Cloud Platform',
+        level: 5,
       },
     ],
   },
@@ -181,7 +193,7 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'OpenAI-APIを用いたLINEbot',
-    description: '定期的に最新論文の要約情報を送信してくれるLINEbotとその運用環境を構築しました。',
+    description: '定期的に最新論文の要約情報を送信してくれるLINEbotをpythonで実装し、その運用環境をGoogle Cloud Platform上で構築しました。',
     url: 'https://github.com/stryig0033/LINE-bot-arxiv',
     image: porfolioImage1,
   },
@@ -190,6 +202,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作成しました。',
     url: 'https://github.com/stryig0033/PredFlow',
     image: porfolioImage2,
+  },
+  {
+    title: 'GithubAPIを用いたrepository検索システムのフルスタック開発',
+    description: 'GithubAPIを用いて、特定のユーザーのrepositoryを検索するシステムを作成しました。バックエンドではPythonのFastAPIを使用し、フロントエンドではNext.jsを使用しています。',
+    url: '',
+    image: porfolioImage3,
   }
 ];
 
@@ -213,7 +231,7 @@ export const education: TimelineItem[] = [
     date: '2024年4月~2026年3月(卒業予定)',
     location: '',
     title: '東京大学大学院 工学系研究科 技術経営戦略学専攻',
-    content: <p>情報工学・環境工学専攻　Long研究室所属</p>,
+    content: <p>情報工学・環境工学専攻　ロン研究室所属</p>,
   },
 ];
 
