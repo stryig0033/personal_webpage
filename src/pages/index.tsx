@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
-import Link from 'next/link';
 
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
@@ -22,9 +21,6 @@ const Home: FC = memo(() => {
       <Hero />
       <About />
       <Portfolio />
-      <Link href="/portfolios">
-        ポートフォリオ一覧
-      </Link>
       <Resume />
       <Contact />
       <Footer />
