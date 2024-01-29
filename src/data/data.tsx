@@ -98,8 +98,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部経済学科入学。
-  計量経済学・数理統計学専攻として経済理論や数理解析手法について学び、2022年夏よりデンマークのAarhus Universityへ交換留学。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学予定。現在はフリーランスエンジニアとして活動中。`,
+  description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部入学。経済理論や数理解析手法について学び、2022年夏よりデンマークのAarhus Universityへ交換留学。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学予定。現在はフリーランスエンジニアとして活動中。`,
   aboutItems: [
     {label: 'Location', text: '東京 / 神戸', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -223,19 +222,19 @@ export const education: TimelineItem[] = [
   },
   {
     date: '2020年4月~2024年3月',
-    location: 'Faculty of economics, Kobe University',
+    location: 'faculty of economics, Kobe University',
     title: '神戸大学 経済学部経済学科',
     content: <p>計量経済学・数理統計学専攻　神戸大学KooBee営業部　IFEEKプログラム13期生</p>,
   },
   {
     date: '2022年8月~2023年6月',
-    location: 'School of business and social sciences, Aarhus University',
+    location: 'School of Business and Social Science, Aarhus University, Denmark',
     title: 'オーフス大学 経済経営学科 (デンマーク)',
-    content: <p>交換留学(1年)　時系列解析・機械学習・ファイナンス理論・マネジメント</p>,
+    content: <p>交換留学(1年)　計量経済学・機械学習・ファイナンス・マネジメント</p>,
   },
   {
     date: '2024年4月~2026年3月(卒業予定)',
-    location: 'Graduate School of Engineering, The University of Tokyo',
+    location: 'TMI, graduate school of engineering, the University of Tokyo',
     title: '東京大学大学院 工学系研究科 技術経営戦略学専攻',
     content: <p>情報工学・環境工学専攻　ロン研究室所属</p>,
   },
