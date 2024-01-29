@@ -2,6 +2,7 @@ import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
+import Link from 'next/link';
 
 import {isMobile} from '../../config';
 import {portfolioItems, SectionId} from '../../data/data';
@@ -13,16 +14,10 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-2xl font-bold text-white">
-          <a href="./portfolio" className="text-white underline">
-          My works
-          </a>
-        </h2>
-        <h2 className="text-white text-center text-xl">
-          <a>制作物を抜粋して紹介しています。詳細は</a>
-          <a href="./portfolio" className="underline">My works</a>
-          <a>から。</a>
-        </h2>
+        <Link href="/portfolio" className="self-center custom-link">My works</Link>
+        <h1 className="text-xl text-center text-white">ここでは作成物を抜粋して紹介しています。詳しい内容は
+        <Link href="/portfolio" className="font-bold text-blue underline">My works</Link>
+        から。</h1>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
