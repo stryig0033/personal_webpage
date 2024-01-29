@@ -215,6 +215,12 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
+    date: '2017年4月~2020年3月',
+    location: 'Hyogo Prefectural Seiryo High School',
+    title: '兵庫県立星陵高等学校',
+    content: <p></p>,
+  },
+  {
     date: '2020年4月~2024年3月',
     location: 'faculty of economics, Kobe University',
     title: '神戸大学 経済学部経済学科',
