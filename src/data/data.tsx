@@ -70,8 +70,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         髙田 智生(たかた ともき)と申します。<br />
-        東京大学大学院工学系研究科の修士課程に在籍中。AIの環境問題への応用方法について研究開発をしています。
-        また、フリーランスでAI/webエンジニアやデータアナリストをしています。
+        東京大学大学院工学系研究科の修士課程に在籍中。AIの環境問題への応用方法について研究開発を行う他、データサイエンティストとプリセールスの長期インターンに参加しています。
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         音楽、釣り、海鮮料理、お酒、ドライブ、言語学習が大好き。
@@ -98,12 +97,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部入学。経済理論や数理解析手法について学び、2022年夏よりデンマークのAarhus Universityへ交換留学。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在学予定。現在はフリーランスエンジニアとして活動中。`,
+  description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部入学。経済理論や数理解析手法について学び、2022年夏よりデンマークのAarhus Universityへ留学。帰国後、東京大学大学院工学系研究科に合格し、2024年4月より在籍。`,
   aboutItems: [
-    {label: 'Location', text: '東京 / 神戸', Icon: MapIcon},
+    {label: 'Location', text: '東京 / Tokyo', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
     {label: 'Study', text: '東京大学大学院工学系研究科 技術経営戦略学専攻 1年', Icon: AcademicCapIcon},
-    {label: 'Interests', text: 'AIモデル開発、Webアプリケーション開発、統計解析', Icon: SparklesIcon},
+    {label: 'Interests', text: '統計解析, AIモデル開発, webアプリケーション開発', Icon: SparklesIcon},
     /*{label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},*/
   ],
 };
@@ -128,7 +127,7 @@ export const skills: SkillGroup[] = [
         level: 2,
       },
       {
-        name: '中文',
+        name: '汉语',
         level: 2,
       }
     ],
@@ -137,7 +136,7 @@ export const skills: SkillGroup[] = [
     name: 'Coding Languages',
     skills: [
       {
-        name: 'Python (pandas, pytorch, tensorflow, FastAPI, etc...)',
+        name: 'Python',
         level: 8,
       },
       {
@@ -146,33 +145,20 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Typescript (next.js, react)',
-        level: 6,
+        level: 5,
       },
       {
-        name: 'Stata',
+        name: 'SAS',
+        level: 4,
+      },
+      {
+        name: 'SQL',
         level: 4,
       },
     ],
   },
   {
-    name: 'Academic Knowledge',
-    skills: [
-      {
-        name: 'Mathematical Statistics',
-        level: 8,
-      },
-      {
-        name: 'Econometrics',
-        level: 8,
-      },
-      {
-        name: 'Machine Learning',
-        level: 7,
-      },
-    ],
-  },
-  {
-    name: 'Cloud knowledge',
+    name: 'Cloud Service',
     skills: [
       {
         name: 'Amazon Web Services',
@@ -243,10 +229,18 @@ export const education: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: '2021年2月~2022年8月(1.5年)',
-    location: 'New Balance Japan',
+    location: 'New Balance Japan 株式会社',
     title: 'クライアントアドバイザー',
     content: (
       <p>接客販売と店舗モデル</p>
+    ),
+  },
+  {
+    date: '2023年9月~2024年2月(6ヵ月)',
+    location: '株式会社スクラムサイン',
+    title: 'インターンシップ(機械学習エンジニア)',
+    content: (
+      <p>機械学習モデル開発・MLOps開発</p>
     ),
   },
   {
@@ -258,19 +252,27 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: '2023年9月~2024年2月(5ヵ月)',
-    location: '株式会社フェロースクラム',
-    title: 'インターンシップ(機械学習エンジニア)',
+    date: '2023年12月~現在',
+    location: 'フリーランス',
+    title: '講師',
     content: (
-      <p>機械学習モデルの開発とクラウドコンピューティング</p>
+      <p>統計検定メンター</p>
     ),
   },
   {
-    date: '2024年2月~現在',
-    location: 'ライト株式会社',
-    title: 'インターンシップ(ソフトウェアエンジニア)',
+    date: '2024年3月~現在',
+    location: '株式会社GEOTRA',
+    title: 'インターンシップ(データサイエンティスト)',
     content: (
-      <p>フロントエンド開発</p>
+      <p>人流データ解析・人流ビッグデータ解析パイプライン開発</p>
+    ),
+  },
+  {
+    date: '2024年4月~現在',
+    location: 'SAS Institute Japan 株式会社',
+    title: 'インターンシップ(プリセールス)',
+    content: (
+      <p>システム導入コンサルティング</p>
     ),
   },
 ]
