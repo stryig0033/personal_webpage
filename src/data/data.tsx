@@ -70,14 +70,10 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         髙田 智生(たかた ともき)と申します。<br />
         <br />
-        東京大学大学院工学系研究科 修士課程在籍。<br />
-        AIの環境問題への応用方法について研究をしております。
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        また現在は、都内にてデータサイエンティスト / プリセールスとして稼働しております。
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        音楽、釣り、海鮮料理、お酒、ドライブ、言語学習が大好き。
+        東京大学大学院工学系研究科 修士課程在籍中。<br />
+        AIの環境問題への応用方法について研究をしております。<br />
+        <br />
+        都内にてデータサイエンティスト / プリセールスとしても稼働中。
       </p>
     </>
   ),
@@ -101,7 +97,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `兵庫県神戸市出身。地元の県立高校を経て、2020年に神戸大学経済学部入学。経済理論や数理解析手法について学び、2022年夏よりデンマークのAarhus Universityへ留学。帰国後、東京大学大学院工学系研究科に合格し、2024年4月より在籍。`,
+  description: `兵庫県神戸市出身。2020年に神戸大学経済学部入学。在学中には学生団体営業部長や北欧留学などを経験。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在籍。音楽、釣り、海鮮料理、お酒、ドライブ、言語学習が大好き。`,
   aboutItems: [
     {label: 'Location', text: '東京 / Tokyo', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
