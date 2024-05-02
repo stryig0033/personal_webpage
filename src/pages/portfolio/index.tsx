@@ -5,11 +5,11 @@ interface Project {
   description: string;
   image?: string;
   link?: string;
-  linkText?: string; // 新しいプロパティ
+  linkText?: string;
 }
 
 const ProjectCard: FC<Project> = memo(
-  ({title, description, image, link, linkText}) => {
+  ({ title, description, image, link, linkText }) => {
     return (
       <div className="flex flex-col gap-y-2 p-4 bg-gray-800 rounded-lg mb-4">
         {image && (
@@ -40,21 +40,24 @@ const ProjectList: FC = memo(() => {
   const projects: Project[] = [
     {
       title: 'OpenAI-APIを用いたLINEbot',
-      description: '定期的に最新論文の要約情報を送信してくれるLINEbotをpythonで実装し、その運用環境をGoogle Cloud Platform上で構築しました。',
+      description:
+        '定期的に最新論文の要約情報を送信してくれるLINEbotをpythonで実装し、その運用環境をGoogle Cloud Platform上で構築しました。',
       image: '',
       link: 'https://github.com/stryig0033/LINE-bot-arxiv',
       linkText: 'Githubリポジトリを開く',
     },
     {
       title: 'MLflowによる機械学習モデルの学習フロー全自動化',
-      description: 'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作成しました。',
+      description:
+        'AWS上にMLflowサーバを構築し、機械学習モデルの学習→最良モデル選択→性能可視化までを全自動で行う仕組みを作成しました。',
       image: '',
       link: 'https://github.com/stryig0033/PredFlow',
       linkText: 'Githubリポジトリを開く',
     },
     {
       title: 'GithubAPIを用いたrepository検索システムのフルスタック開発',
-      description: 'GithubAPIを用いて、特定のユーザーのrepositoryを検索するシステムを作成しました。',
+      description:
+        'GithubAPIを用いて、特定のユーザーのrepositoryを検索するシステムを作成しました。',
       image: '',
       link: 'https://github.com/stryig0033/git_repo_search_engine',
       linkText: 'Githubリポジトリを開く',
@@ -87,7 +90,9 @@ const ProjectList: FC = memo(() => {
 const Home: FC = memo(() => {
   return (
     <div className="flex flex-col gap-y-8">
-      <h1 className="self-center text-4xl font-bold py-8 text-white">My Works</h1>
+      <h1 className="self-center text-4xl font-bold py-8 text-white">
+        My Works
+      </h1>
       <h2 className="text-white text-center text-xl">
         <a>ここでは、これまでの制作物や担当した案件を紹介しています。</a>
       </h2>
