@@ -9,7 +9,7 @@ interface Project {
 }
 
 const ProjectCard: FC<Project> = memo(
-  ({ title, description, image, link, linkText }) => {
+  ({title, description, image, link, linkText}) => {
     return (
       <div className="flex flex-col gap-y-2 p-4 bg-gray-800 rounded-lg mb-4">
         {image && (
