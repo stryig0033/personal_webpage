@@ -83,12 +83,12 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
-    {
-      href: 'https://stryig.com/resume.html',
-      text: 'CV',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
+    // {
+    //   href: 'https://stryig.com/resume.html',
+    //   text: 'CV',
+    //   primary: true,
+    //   Icon: ArrowDownTrayIcon,
+    // },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
@@ -195,7 +195,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'GithubAPIを用いたrepository検索システムのフルスタック開発',
-    description: 'GithubAPIを用いて、特定のユーザーのrepositoryを検索するシステムを作成しました。バックエンドではPythonのFastAPIを使用し、フロントエンドではNext.jsを使用しています。',
+    description: 'GithubAPIを用いて、特定のユーザーのrepositoryを検索するシステムを作成しました。',
     url: '',
     image: porfolioImage3,
   }
@@ -215,7 +215,7 @@ export const education: TimelineItem[] = [
     date: '2020年4月~2024年3月',
     location: 'faculty of economics, Kobe University',
     title: '神戸大学 経済学部経済学科',
-    content: <p>計量経済学・数理統計学専攻　神戸大学KooBee営業部　IFEEKプログラム13期生</p>,
+    content: <p>計量経済学専攻　神戸大学KooBee営業部　IFEEKプログラム9期生</p>,
   },
   {
     date: '2022年8月~2023年6月',
@@ -227,7 +227,7 @@ export const education: TimelineItem[] = [
     date: '2024年4月~2026年3月(卒業予定)',
     location: 'TMI, graduate school of engineering, the University of Tokyo',
     title: '東京大学大学院 工学系研究科 技術経営戦略学専攻',
-    content: <p>情報工学・環境工学専攻　ロン研究室所属</p>,
+    content: <p>ロン研究室所属</p>,
   },
 ];
 
@@ -246,14 +246,6 @@ export const experience: TimelineItem[] = [
     title: 'インターンシップ(機械学習エンジニア)',
     content: (
       <p>機械学習モデル開発・MLOps開発</p>
-    ),
-  },
-  {
-    date: '2022年12月~現在',
-    location: 'フリーランス',
-    title: 'Webエンジニア',
-    content: (
-      <p>シフト自動作成システムやスクレイピングシステムの開発</p>
     ),
   },
   {
