@@ -70,7 +70,12 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         髙田 智生(たかた ともき)と申します。<br />
-        東京大学大学院工学系研究科の修士課程に在籍中。AIの環境問題への応用方法について研究開発を行う他、データサイエンティストとプリセールスの長期インターンに参加しています。
+        <br />
+        東京大学大学院工学系研究科 修士課程在籍。<br />
+        AIの環境問題への応用方法について研究をしております。
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        また現在は、都内にてデータサイエンティスト / プリセールスとして稼働しております。
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         音楽、釣り、海鮮料理、お酒、ドライブ、言語学習が大好き。
