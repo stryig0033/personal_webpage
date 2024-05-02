@@ -248,7 +248,7 @@ export const experience: TimelineItem[] = [
     location: 'フリーランス',
     title: '講師',
     content: (
-      <p>統計検定メンター</p>
+      <p>データサイエンスコミュニティ運営、統計検定メンター</p>
     ),
   },
   {
@@ -256,7 +256,7 @@ export const experience: TimelineItem[] = [
     location: '株式会社GEOTRA',
     title: 'インターンシップ(データサイエンティスト)',
     content: (
-      <p>人流データ解析・人流ビッグデータ解析パイプライン開発</p>
+      <p>人流データ解析・ビッグデータ解析パイプライン開発</p>
     ),
   },
   {
@@ -264,7 +264,7 @@ export const experience: TimelineItem[] = [
     location: 'SAS Institute Japan 株式会社',
     title: 'インターンシップ(プリセールス)',
     content: (
-      <p>システム導入コンサルティング</p>
+      <p>営業・システム導入コンサルティング</p>
     ),
   },
 ]
