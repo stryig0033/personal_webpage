@@ -14,7 +14,7 @@ import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-//import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 //import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 //import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 //import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
@@ -193,6 +193,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'GithubAPIを用いて、特定のユーザーのrepositoryを検索するシステムを作成しました。',
     url: '',
     image: porfolioImage3,
+  },
+  {
+    title: 'Kaggle Home Credit - Credit Risk Model Stability',
+    description: 'Kaggleにて2024年2月~5月に開催された、Home Credit - Credit Risk Model Stabilityで、108位 / 3885チーム となり、銀メダルを獲得しました。',
+    url: '',
+    image: porfolioImage4,
   }
 ];
 

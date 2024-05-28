@@ -15,7 +15,7 @@ const Portfolio: FC = memo(() => {
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
         <Link href="/portfolio" className="self-center custom-link">My works</Link>
-        <h1 className="text-xl text-center text-white">ここでは作成物を抜粋して紹介しています。詳しい内容は
+        <h1 className="text-xl text-center text-white">ここでは成果物を抜粋して紹介しています。詳しい内容は
         <Link href="/portfolio" className="font-bold text-blue underline">My works</Link>
         から。</h1>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
