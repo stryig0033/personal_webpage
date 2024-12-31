@@ -10,6 +10,7 @@ const Resume: FC = memo(() => {
   return (
     <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
+        {/*
         <ResumeSection title="Education">
           {education.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
@@ -20,6 +21,7 @@ const Resume: FC = memo(() => {
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
+        */}
         <ResumeSection title="Skills">
           <p className="pb-4 font-bold text-center">TOEFL 88点 (27/21/19/21)</p>
           <p className="pb-8 font-bold text-center">統計検定準1級 取得</p>

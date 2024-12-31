@@ -15,7 +15,7 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-//import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 //import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 //import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 //import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
@@ -71,9 +71,8 @@ export const heroData: Hero = {
         髙田 智生(たかた ともき)と申します。<br />
         <br />
         東京大学大学院工学系研究科 修士課程在籍中。<br />
-        AIの環境問題への応用方法について研究をしております。<br />
         <br />
-        都内にてデータサイエンティスト / プリセールスとしても稼働中。
+        都内にてデータサイエンティストとしても稼働中。
       </p>
     </>
   ),
@@ -95,14 +94,35 @@ export const heroData: Hero = {
 /**
  * About section
  */
+
+function getAge(birthDateString: string) {
+  // 例: birthDateString = '2001-05-15' (YYYY-MM-DD形式)
+  const today = new Date();
+  const birthDate = new Date(birthDateString);
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+
+  // まだ誕生日が来ていない (月日が今より後) なら -1 する
+  const thisYearBirthday = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+  if (today < thisYearBirthday) {
+    age--;
+  }
+
+  return age;
+}
+
+// 例：誕生日を文字列で定義
+const birthDateString = '2002-03-29';
+const calcAge = getAge(birthDateString);
+
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `兵庫県神戸市出身。2020年に神戸大学経済学部入学。在学中には学生団体営業部長や北欧留学などを経験。帰国後、東京大学大学院工学系研究科に合格し2024年4月より在籍。音楽、釣り、海鮮料理、お酒、ドライブ、言語学習が大好き。`,
+  description: `兵庫県神戸市出身。2024年に神戸大学経済学部卒業。現在は東京大学大学院工学系研究科に在籍中。`,
   aboutItems: [
     {label: 'Location', text: '東京 / Tokyo', Icon: MapIcon},
-    {label: 'Age', text: '22', Icon: CalendarIcon},
-    {label: 'Study', text: '東京大学大学院工学系研究科 技術経営戦略学専攻 1年', Icon: AcademicCapIcon},
-    {label: 'Interests', text: '統計解析, AIモデル開発, webアプリケーション開発', Icon: SparklesIcon},
+    {label: 'Age', text: String(calcAge), Icon: CalendarIcon},
+    {label: 'Study', text: '東京大学大学院工学系研究科', Icon: AcademicCapIcon},
+    {label: 'Interests', text: '統計解析, AIモデル開発, webアプリケーション開発, 事業開発', Icon: SparklesIcon},
     /*{label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},*/
   ],
 };
@@ -170,6 +190,15 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
+  {
+    name: 'Others',
+    skills: [
+      {
+        name: 'Google Firebase',
+        level: 5,
+      },
+    ],
+  },
 ];
 
 /**
@@ -199,6 +228,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Kaggleにて2024年2月~5月に開催された、Home Credit - Credit Risk Model Stabilityで、108位 / 3885チーム となり、銀メダルを獲得しました。',
     url: '',
     image: porfolioImage4,
+  },
+  {
+    title: 'デザイン思考練習サイト',
+    description: 'デザイン思考を練習できるサイトを作成しました。',
+    url: 'designthinking.nath-hub.com',
+    image: porfolioImage5,
   }
 ];
 

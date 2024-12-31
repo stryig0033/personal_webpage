@@ -1,8 +1,8 @@
-import {FC, memo} from 'react';
+import { FC, memo } from 'react';
+// 「import type」で型を読み込み、名前を変える
+import type { TimelineItem as TimelineItemType } from '../../../data/dataDef';
 
-import {TimelineItem} from '../../../data/dataDef';
-
-const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
+const TimelineItemComponent: FC<{ item: TimelineItemType }> = memo(({ item }) => {
   const {title, date, location, content} = item;
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
@@ -19,5 +19,5 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   );
 });
 
-TimelineItem.displayName = 'TimelineItem';
-export default TimelineItem;
+TimelineItemComponent.displayName = 'TimelineItemComponent';
+export default TimelineItemComponent;
