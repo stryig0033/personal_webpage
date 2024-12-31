@@ -1,14 +1,19 @@
 /* eslint-env node */
+/** @type {import('next').NextConfig} */
 
 const nextConfig = {
 
+  // 静的エクスポートを有効化 (Next.js 13.3+)
+  output: 'export',
+
   // Webpackのカスタム設定
-  webpack: config => {
+  webpack: (config) => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
-    // Next 12が複数のTSローダーを持っているため、それらすべてを更新する。
-    const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
-
+    // Next 12が複数のTSローダーを持っているため、それらすべてを更新
+    const tsRules = oneOfRule.oneOf.filter(
+      rule => rule.test && rule.test.toString().includes('tsx|ts')
+    );
     tsRules.forEach(rule => {
       // eslint-disable-next-line no-param-reassign
       rule.include = undefined;
@@ -32,7 +37,7 @@ const nextConfig = {
   // ブラウザソースマップの無効化
   productionBrowserSourceMaps: false,
 
-  // 厳格なReactモードの有効化
+  // 厳格なReactモード
   reactStrictMode: true,
 
   // SWCの最小化
@@ -41,17 +46,10 @@ const nextConfig = {
   // 末尾スラッシュの無効化
   trailingSlash: false,
 
-  // 画像の設定
+  // images 設定を削除 or unoptimized だけ設定
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },{
-        protocol: 'https',
-        hostname: 'source.unsplash.com',
-      },
-    ],
+    // remotePatterns: [...], ← 削除
+    unoptimized: true,
   },
 
 };

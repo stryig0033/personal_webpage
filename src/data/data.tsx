@@ -232,7 +232,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'デザイン思考練習サイト',
     description: 'デザイン思考を練習できるサイトを作成しました。',
-    url: 'designthinking.nath-hub.com',
+    url: 'https://designthinking.nath-hub.com',
     image: porfolioImage5,
   }
 ];
