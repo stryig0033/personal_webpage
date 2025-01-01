@@ -78,7 +78,7 @@ export const heroData: Hero = {
   ),
   actions: [
     // {
-    //   href: 'https://stryig.com/resume.html',
+    //   href: 'https://nath-hub.com/resume.html',
     //   text: 'CV',
     //   primary: true,
     //   Icon: ArrowDownTrayIcon,
